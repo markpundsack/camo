@@ -17,19 +17,19 @@
 
   "env": {
     "CAMO_HOSTNAME": {
-      "description": "The hostname for the camo server."
+      "description": "The fully qualified domain name for camo to run on."
     },
     "CAMO_KEY": {
-      "description": "The fully qualified domain name for camo to run on.",
+      "description": "Unique key for this environment to sign urls with.",
       "generator": "secret"
     },
     "CAMO_LENGTH_LIMIT": {
       "description": "The maximum Content-Length that camo will proxy in bytes",
-      "value": "5242880",
-      "required": true
+      "value": "5242880"
     },
     "CAMO_LOGGING_ENABLED": {
-      "description": "Toggle whether or not to log verbosely('debug' or disabled')."
+      "description": "Toggle whether or not to log verbosely ('debug' or 'disabled').",
+      "value": "disabled"
     },
     "CAMO_MAX_REDIRECTS": {
       "description": "The number of redirects that camo should follow",
